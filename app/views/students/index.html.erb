@@ -1,0 +1,26 @@
+<h1>Students#index</h1>
+
+<ul>
+  <% @students.each do |student| %>
+    <li>
+     Name: <%= student.name %>
+    </li>
+
+    <li>
+      Hobby: <%= student.hobby %>
+    </li>
+
+    <li>
+     Pokemon: <%= student.pokemon %>
+    </li>
+
+    <li>
+     Lucky number: <%= student.lucky_number %>
+    </li>
+
+    <li>
+     Birthday: <%= student.birthday %>
+    </li>
+
+  <% end %>
+</ul>
