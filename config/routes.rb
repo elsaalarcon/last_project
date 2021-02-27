@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
   root 'students#index'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :students
+  # I spend four hours searching for a bug, when I try to delete a resource
+  # and the bug was in the line three, I wrote resource instead of resources
 end
